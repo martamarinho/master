@@ -39,8 +39,8 @@ public class Metodos_utilizados {
 	        Thread.sleep(tempo);
 	    }
 
-	    public void preencher(By elemento, String texto) {
-	        driver.findElement(elemento).sendKeys(texto);
+	    public void preencherCampo(String texto, By elemento) {
+	    	driver.findElement(elemento).sendKeys(texto);
 	    }
 
 	    public void fecharNavegador() {
@@ -55,10 +55,10 @@ public class Metodos_utilizados {
 	        assertEquals(textoEsperado, texto);
 	    }
 
-	    public void tirarPrint(String nome) throws IOException {
+	    public void tirarPrint(By by) throws IOException {
 	        TakesScreenshot scrShot = ((TakesScreenshot) driver);
 	        File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
-	        File destFile = new File("./src/evidencias/" + nome + ".png");
+	        File destFile = new File("./src/evidencias/" + by + ".png");
 	        FileUtils.copyFile(srcFile, destFile);
 	    }
 
