@@ -55,10 +55,10 @@ public class Metodos_utilizados {
 	        assertEquals(textoEsperado, texto);
 	    }
 
-	    public void tirarPrint(By by) throws IOException {
+	    public void tirarPrint(String string) throws IOException {
 	        TakesScreenshot scrShot = ((TakesScreenshot) driver);
 	        File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
-	        File destFile = new File("./src/evidencias/" + by + ".png");
+	        File destFile = new File("./src/evidencias/" + string + ".png");
 	        FileUtils.copyFile(srcFile, destFile);
 	    }
 
@@ -76,7 +76,24 @@ public class Metodos_utilizados {
 	            driver.quit(); // Fechar o navegador
 	        }
 	    }
+
+		public void preencherCampo(By campoCPF, String string) {
+			// TODO Auto-generated method stub
 			
 		}
+
+		public void tirarPrint(By informacoesenviadas) {
+			// TODO Auto-generated method stub
+			
+		}
+		 public void preencherEspaco(By elemento, String texto) {
+		    	driver.findElement(elemento).sendKeys(texto);
+		    }
+
+         public void preencherDados(By elemento, String texto) {
+   	      driver.findElement(elemento).sendKeys(texto);
+   }
+}		
+		
 
 
