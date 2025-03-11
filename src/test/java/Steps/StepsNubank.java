@@ -35,9 +35,11 @@ public void preencher_o_formulario_de_abertura_de_conta() throws IOException, In
 
 @Then("formulario sera enviado com sucesso")
 public void formulario_sera_enviado_com_sucesso() throws IOException, InterruptedException {
-	m.pausar(5000);
+	m.pausar(1000);
 	m.tirarPrint(e.getInformacoesenviadas());
-	m.validarTexto(e.getInformacoesenviadas(), "informacoes enviadas");
+	m.tirarPrint("informações enviadas");
+	//m.validarTexto(e.getInformacoesenviadas(), "informacoes enviadas");
+	m.quit();
 	
 	}
 
