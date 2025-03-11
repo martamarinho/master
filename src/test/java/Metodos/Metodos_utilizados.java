@@ -78,20 +78,20 @@ public class Metodos_utilizados {
 	       
 	    }
 
-<<<<<<< HEAD
-		public void preencherDados(By campoEmail, String string) {
+
+		public void preencherDados1(By campoEmail, String string) {
 			// TODO Auto-generated method stub
 			
 		}
 
-		public void preencherCampo(By campoEmail, String string) {
+		public void preencherCampo1(By campoEmail, String string) {
 			// TODO Auto-generated method stub
 			
 		}
-=======
+
 		public void preencherCampo(By campoCPF, String string) {
 			// TODO Auto-generated method stub
->>>>>>> 02091b1b5441ee2d4a8ca77ae7712e359d4af146
+
 			
 		}
 
