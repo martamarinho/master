@@ -75,7 +75,18 @@ public class Metodos_utilizados {
 	        if (driver != null) {
 	            driver.quit(); // Fechar o navegador
 	        }
+	       
 	    }
+
+		public void preencherDados(By campoEmail, String string) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void preencherCampo(By campoEmail, String string) {
+			// TODO Auto-generated method stub
+			
+		}
 			
 		}
 
