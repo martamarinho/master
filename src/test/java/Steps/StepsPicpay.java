@@ -49,7 +49,7 @@ public class StepsPicpay {
 
   @Entao("retornara uma pagina com QRCode para completa os processos de abertura de conta")
   public void retornara_uma_pagina_com_qr_code_para_completa_os_processos_de_abertura_de_conta() throws IOException, InterruptedException {
- metodo.pausar(2000);
+  metodo.pausar(2000);
   metodo.tirarPrint("Mensagem informativa");
   metodo.quit();
   }

@@ -50,7 +50,7 @@ public class StepsInter {
 
 	@Then("aparecerá mensagem que os dados foram recebidos")
 	public void aparecerá_mensagem_que_os_dados_foram_recebidos() {
-	    
+	m.quit();    
 	}
 
 }

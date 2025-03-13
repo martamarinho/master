@@ -1,10 +1,10 @@
 #Author: Daniella 
 
-@FormularioAberturaDeConta
+@tag
 Feature: Abertura de Conta Banco Inter
 
 
-  @tag1
+ 
   Scenario: Abertura de conta com sucesso
     Given que o usuario acesse o site "https://inter.co/"
     When clicar no botão abra sua conta

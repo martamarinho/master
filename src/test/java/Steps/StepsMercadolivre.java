@@ -27,7 +27,7 @@ public class StepsMercadolivre {
 
 	@Quando("clicar em lupa")
 	public void clicar_em_lupa() {
-
+     metodos.quit();
 	}
 
 	@Então("retornara o produto")
